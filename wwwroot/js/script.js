@@ -1,13 +1,11 @@
 ﻿//Shayna Oh, January 20, 2020, 413
-var submit = document.getElementById("submitButton");
-
-submit.addEventListener("click", function () {
+$("#submitButton").click(function () {
     //gather inputs
-    var assignment = document.getElementById("assignment").value;
-    var project = document.getElementById("project").value;
-    var quiz = document.getElementById("quiz").value;
-    var exam = document.getElementById("exam").value;
-    var intex = document.getElementById("intex").value;
+    var assignment = $("assignment").value;
+    var project = $("project").value;
+    var quiz = $("quiz").value;
+    var exam = $("exam").value;
+    var intex = $("intex").value;
     var final = 0;
     var letter = '';
 
