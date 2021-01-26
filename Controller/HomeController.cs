@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _413HW1_ShaynaOh.Controller
+namespace _413HW1_ShaynaOh.Controllers
 {
     public class HomeController : Controller
     {
