@@ -1,14 +1,13 @@
 ﻿//Shayna Oh, January 20, 2020, 413
 $("#submitButton").click(function () {
     //gather inputs
-    var assignment = $("assignment").value;
-    var project = $("project").value;
-    var quiz = $("quiz").value;
-    var exam = $("exam").value;
-    var intex = $("intex").value;
+    var assignment = $("#assignment").val();
+    var project = $("#project").val();
+    var quiz = $("#quiz").val();
+    var exam = $("#exam").val();
+    var intex = $("#intex").val();
     var final = 0;
     var letter = '';
-
     //calculate final percentage based on weighted scores
     final = assignment * .5 + project * .1 + quiz * .1 + exam * .2 + intex * .1;
     //get letter grade

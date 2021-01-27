@@ -1,0 +1,25 @@
+﻿
+<!--Shayna Oh, 1.20.2020, 413-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="~/img/favicon.ico">
+
+</head>
+   <body>
+       <menu>
+           <ul>
+               <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+               <li><a asp-controller="Home" asp-action="Calculator">GPA Calculator</a></li>
+           </ul>
+       </menu>
+
+    @RenderBody()
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+</html>

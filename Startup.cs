@@ -22,6 +22,14 @@ namespace _413HW1_ShaynaOh
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsEnvironment("Development"))
+            {
+            app.UseDeveloperExceptionPage();
+
+            } else
+            {
+                //Add Error Page
+            }
             app.UseNodeModules();    
             app.UseStaticFiles();
 

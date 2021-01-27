@@ -12,5 +12,10 @@ namespace _413HW1_ShaynaOh.Controllers
         {
             return View();
         }
+
+        public IActionResult Calculator()
+        {
+            return View();
+        }
     }
 }
