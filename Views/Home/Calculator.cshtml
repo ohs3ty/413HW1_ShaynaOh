@@ -5,24 +5,25 @@
     ViewBag.Title = "GPA Calculator";
 }
 
-
+@model CalculatorModel
     <!-- js files -->
     <h2>Grade Calculator</h2>
-    <form>
+    <form method="post">
         <label>Assignments</label>
-        <input id="assignment" type="number" min="0" />
+        <input id="assignment" type="number" asp-for="assignment" min="0" />
         <br />
         <label>Group Project</label>
-        <input id="project" type="number" min="0" />
+        <input asp-for="project" id="project" type="number" min="0" />
         <br />
         <label>Quizzes</label>
-        <input id="quiz" type="number" min="0" />
+        <input asp-for="quiz" id="quiz" type="number" min="0" />
         <br />
         <label>Exams</label>
-        <input id="exam" type="number" min="0" />
+        <input asp-for="exam" id="exam" type="number" min="0" />
         <br />
         <label>INTEX</label>
-        <input id="intex" type="number" min="0" />
+        <input asp-for="intex" id="intex" type="number" min="0" />
         <br /><br />
         <input type="submit" value="Calculate Final Grade" id="submitButton" />
+        <div asp-validation-summary="All"></div>
     </form>
