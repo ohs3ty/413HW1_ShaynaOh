@@ -30,7 +30,7 @@ namespace _413HW1_ShaynaOh
             {
                 //Add Error Page
             }
-            app.UseNodeModules();    
+           // app.UseNodeModules();    
             app.UseStaticFiles();
 
             app.UseRouting();
